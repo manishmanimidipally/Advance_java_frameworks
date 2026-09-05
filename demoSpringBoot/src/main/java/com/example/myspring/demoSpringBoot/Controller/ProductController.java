@@ -46,8 +46,8 @@ public class ProductController{
 	
 	//update a product 
 	@PutMapping("/products/{prod_id}")
-	public void updateProduct(@PathVariable int prod_id ,@RequestBody Products product  ) {
-		service.updateProduct(prod_id,product);
+	public void updateProduct(@RequestBody Products product  ) {
+		service.updateProduct(product);
 	}
 	
 	//delete a product 

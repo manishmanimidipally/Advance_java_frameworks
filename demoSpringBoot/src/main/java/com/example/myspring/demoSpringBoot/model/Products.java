@@ -1,6 +1,12 @@
 package com.example.myspring.demoSpringBoot.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Products{
+
+	@Id
 	int product_Id;
 	String product_Name;
 	double product_Price;
