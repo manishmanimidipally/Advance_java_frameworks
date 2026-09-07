@@ -1,0 +1,449 @@
+* {
+    box-sizing: border-box;
+}
+
+.home-page {
+    min-height: 100vh;
+    background: #15161c;
+    color: white;
+}
+
+
+/* ================= HEADER ================= */
+
+.home-header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    border-bottom: 1px solid #292b35;
+
+    background: #181a21;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #2f80ed;
+    color: white;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    box-shadow: 0 5px 20px rgba(47, 128, 237, 0.25);
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.logo span {
+    font-size: 11px;
+    color: #8d93a3;
+}
+
+.home-header nav {
+    display: flex;
+    gap: 30px;
+}
+
+.home-header nav a {
+    color: #aeb4c2;
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.home-header nav a:hover {
+    color: white;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: 500px;
+
+    padding: 80px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.welcome {
+    color: #4da3ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.05;
+
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #4da3ff;
+}
+
+.hero-text {
+    color: #aeb4c2;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    max-width: 520px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 14px 24px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.primary-btn {
+    background: #2f80ed;
+    color: white;
+    border: none;
+
+    box-shadow: 0 8px 25px rgba(47, 128, 237, 0.25);
+}
+
+.primary-btn:hover {
+    background: #2574d5;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background: transparent;
+    color: white;
+
+    border: 1px solid #444754;
+}
+
+.secondary-btn:hover {
+    background: #242630;
+}
+
+
+/* ================= HOSPITAL CARD ================= */
+
+.hospital-card {
+    width: 360px;
+
+    padding: 40px 35px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        145deg,
+        #20232d,
+        #181a21
+    );
+
+    border: 1px solid #30333e;
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+
+    text-align: center;
+}
+
+.hospital-icon {
+    width: 80px;
+    height: 80px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2f80ed;
+
+    font-size: 42px;
+
+    box-shadow: 0 10px 35px rgba(47, 128, 237, 0.3);
+}
+
+.hospital-card h2 {
+    margin-top: 25px;
+}
+
+.hospital-card p {
+    color: #9298a8;
+
+    line-height: 1.6;
+}
+
+.stats {
+    display: flex;
+
+    justify-content: space-around;
+
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #30333e;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stats strong {
+    color: #4da3ff;
+    font-size: 18px;
+}
+
+.stats span {
+    color: #777d8d;
+    font-size: 11px;
+}
+
+
+/* ================= ROLES ================= */
+
+.roles {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 60px 40px 90px;
+
+    text-align: center;
+}
+
+.section-label {
+    color: #4da3ff;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+}
+
+.roles > h2 {
+    font-size: 34px;
+
+    margin: 10px 0;
+}
+
+.section-description {
+    color: #858b9b;
+}
+
+
+/* ================= ROLE CARDS ================= */
+
+.role-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 40px;
+}
+
+.role-card {
+    text-decoration: none;
+
+    text-align: left;
+
+    display: flex;
+
+    gap: 20px;
+
+    padding: 30px;
+
+    border-radius: 14px;
+
+    background: #1d1f27;
+
+    border: 1px solid #2c2f39;
+
+    transition: 0.25s;
+}
+
+.role-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #3d8ff0;
+
+    background: #21242d;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.role-icon {
+    min-width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    font-size: 27px;
+}
+
+.patient-icon {
+    background: rgba(47, 128, 237, 0.15);
+    color: #4da3ff;
+}
+
+.doctor-icon {
+    background: rgba(46, 204, 113, 0.15);
+    color: #43d17d;
+}
+
+.admin-icon {
+    background: rgba(155, 89, 182, 0.15);
+    color: #bd78df;
+}
+
+.role-card h3 {
+    margin: 0 0 10px;
+
+    color: white;
+
+    font-size: 20px;
+}
+
+.role-card p {
+    margin: 0 0 15px;
+
+    color: #8d93a3;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+.role-card span {
+    color: #4da3ff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 25px 8%;
+
+    border-top: 1px solid #292b35;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #777d8d;
+
+    font-size: 12px;
+}
+
+footer strong {
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 850px) {
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 50px;
+    }
+
+    .hero-text {
+        margin: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .role-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .home-header nav {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

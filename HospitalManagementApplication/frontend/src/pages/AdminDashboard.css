@@ -1,0 +1,556 @@
+* {
+    box-sizing: border-box;
+}
+
+.admin-page {
+    min-height: 100vh;
+    background: #15161c;
+    color: white;
+}
+
+
+/* ================= HEADER ================= */
+
+.admin-header {
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: #181a21;
+
+    border-bottom: 1px solid #292b35;
+}
+
+.admin-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.admin-logo-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #bd78df;
+
+    font-size: 22px;
+}
+
+.admin-logo h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.admin-logo span {
+    color: #858b9b;
+    font-size: 11px;
+}
+
+.admin-header nav {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-header nav a {
+    color: #aeb4c2;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+}
+
+.admin-header nav a:hover {
+    color: white;
+    background: #242630;
+}
+
+.admin-header nav a.active {
+    color: white;
+    background: #bd78df;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.admin-container {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 45px 0 70px;
+}
+
+
+/* ================= WELCOME ================= */
+
+.admin-welcome {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+}
+
+.admin-label {
+    color: #bd78df;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.admin-welcome h1 {
+    margin: 0 0 10px;
+
+    font-size: 42px;
+}
+
+.admin-welcome > div > p:last-child {
+    color: #858b9b;
+
+    margin: 0;
+}
+
+.admin-badge {
+    padding: 12px 18px;
+
+    border-radius: 20px;
+
+    background: rgba(189, 120, 223, 0.12);
+
+    color: #bd78df;
+
+    font-size: 13px;
+}
+
+
+/* ================= STATS ================= */
+
+.admin-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.admin-stat {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    background: #1d1f27;
+
+    border: 1px solid #2c2f39;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.admin-stat:hover {
+    transform: translateY(-3px);
+
+    border-color: #555a69;
+}
+
+.admin-stat-icon {
+    width: 48px;
+    height: 48px;
+
+    min-width: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+}
+
+.admin-stat-icon.blue {
+    background: rgba(47, 128, 237, 0.15);
+    color: #4da3ff;
+}
+
+.admin-stat-icon.green {
+    background: rgba(67, 209, 125, 0.15);
+    color: #43d17d;
+}
+
+.admin-stat-icon.purple {
+    background: rgba(189, 120, 223, 0.15);
+    color: #bd78df;
+}
+
+.admin-stat-icon.orange {
+    background: rgba(240, 160, 70, 0.15);
+    color: #f0a046;
+}
+
+.admin-stat span {
+    display: block;
+
+    color: #858b9b;
+
+    font-size: 11px;
+
+    margin-bottom: 5px;
+}
+
+.admin-stat strong {
+    font-size: 25px;
+}
+
+
+/* ================= MENU ================= */
+
+.admin-menu {
+    display: flex;
+
+    gap: 8px;
+
+    padding: 7px;
+
+    margin-bottom: 20px;
+
+    background: #1d1f27;
+
+    border: 1px solid #2c2f39;
+
+    border-radius: 10px;
+}
+
+.admin-menu button {
+    background: transparent;
+
+    color: #858b9b;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.admin-menu button:hover {
+    color: white;
+
+    background: #242630;
+}
+
+.admin-menu button.menu-active {
+    background: #bd78df;
+
+    color: white;
+}
+
+
+/* ================= CARD ================= */
+
+.admin-card {
+    background: #1d1f27;
+
+    border: 1px solid #2c2f39;
+
+    border-radius: 14px;
+
+    padding: 25px;
+}
+
+.admin-card-heading {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.admin-card-heading h2 {
+    margin: 0 0 5px;
+
+    color: white;
+
+    font-size: 21px;
+}
+
+.admin-card-heading p {
+    margin: 0;
+
+    color: #858b9b;
+
+    font-size: 13px;
+}
+
+
+/* ================= BADGES ================= */
+
+.count-badge {
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background: rgba(47, 128, 237, 0.12);
+
+    color: #4da3ff;
+
+    font-size: 11px;
+}
+
+.green-badge {
+    background: rgba(67, 209, 125, 0.12);
+    color: #43d17d;
+}
+
+.purple-badge {
+    background: rgba(189, 120, 223, 0.12);
+    color: #bd78df;
+}
+
+.orange-badge {
+    background: rgba(240, 160, 70, 0.12);
+    color: #f0a046;
+}
+
+
+/* ================= OVERVIEW ================= */
+
+.overview-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.overview-grid div {
+    padding: 25px;
+
+    background: #242630;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.overview-grid span {
+    display: block;
+
+    color: #858b9b;
+
+    font-size: 12px;
+
+    margin-bottom: 10px;
+}
+
+.overview-grid strong {
+    font-size: 30px;
+}
+
+
+/* ================= TABLE ================= */
+
+.admin-table {
+    overflow-x: auto;
+}
+
+.admin-table table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    background: #242630;
+
+    color: #858b9b;
+
+    font-size: 12px;
+
+    padding: 14px;
+
+    text-align: left;
+}
+
+.admin-table td {
+    color: #c5cad5;
+
+    font-size: 13px;
+
+    padding: 14px;
+
+    border-bottom: 1px solid #30333e;
+}
+
+.admin-table td strong {
+    color: white;
+}
+
+.admin-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ================= DELETE ================= */
+
+.delete-btn {
+    background: rgba(231, 76, 60, 0.12);
+
+    color: #ff7568;
+
+    border: 1px solid rgba(231, 76, 60, 0.2);
+
+    padding: 7px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 11px;
+}
+
+.delete-btn:hover {
+    background: #e74c3c;
+
+    color: white;
+}
+
+
+/* ================= STATUS ================= */
+
+.status {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+.status.booked {
+    background: rgba(47, 128, 237, 0.15);
+    color: #4da3ff;
+}
+
+.status.completed {
+    background: rgba(67, 209, 125, 0.15);
+    color: #43d17d;
+}
+
+.status.cancelled {
+    background: rgba(231, 76, 60, 0.15);
+    color: #ff7568;
+}
+
+
+/* ================= FOOTER ================= */
+
+.admin-footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 25px 8%;
+
+    border-top: 1px solid #292b35;
+
+    color: #777d8d;
+
+    font-size: 12px;
+}
+
+.admin-footer strong {
+    color: white;
+}
+
+.admin-footer span {
+    margin-left: 5px;
+}
+
+.admin-footer p {
+    margin: 0;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 950px) {
+
+    .admin-stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .overview-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+
+    .admin-welcome {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .admin-menu {
+        overflow-x: auto;
+    }
+
+    .admin-header nav {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .admin-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+}

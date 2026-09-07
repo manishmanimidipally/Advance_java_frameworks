@@ -1,0 +1,121 @@
+/* Keep your existing background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #15161c;
+    color: white;
+}
+
+/* Dashboard */
+.dashboard {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* Main heading */
+.dashboard h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Welcome text */
+.dashboard > p {
+    color: #b8c0d0;
+    text-align: center;
+}
+
+/* White cards */
+.dashboard section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+/* Section headings - IMPORTANT */
+.dashboard section h2 {
+    color: #1f3a5f;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.dashboard label {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Inputs */
+.dashboard input,
+.dashboard select,
+.dashboard textarea {
+    color: #222;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Placeholder text */
+.dashboard input::placeholder,
+.dashboard textarea::placeholder {
+    color: #777;
+}
+
+/* Tables */
+.dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.dashboard th {
+    background: #f0f0f0;
+    color: #333;
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.dashboard td {
+    background: white;
+    color: #333;
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Buttons */
+.dashboard button {
+    background: #666;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard button:hover {
+    background: #444;
+}
+
+/* Form */
+.dashboard form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+}
+
+/* Available time buttons */
+.dashboard form button[type="button"] {
+    background: #666;
+    color: white;
+}
+
+/* Book appointment button */
+.dashboard form button[type="submit"] {
+    background: #666;
+    color: white;
+}
