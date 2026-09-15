@@ -1,4 +1,4 @@
-package com.sunny.SpringSecurityDemo.Controller;
+package com.sunny.SpringSecurityDemo.model;
 
 public class Student {
 	private int id;
